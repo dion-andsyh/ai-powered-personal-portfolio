@@ -5,8 +5,6 @@
   
   **Frontend Developer & UI/UX Enthusiast**
   
-  [![Portfolio](https://img.shields.io/badge/Portfolio-Live-blue?style=for-the-badge&logo=netlify)](https://your-portfolio.netlify.app)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/dionandreansyah)
   [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/andsyh)
 </div>
 
@@ -68,8 +66,6 @@ This portfolio features an **AI Assistant** powered by Google Gemini that can an
 ## 📫 Get In Touch
 
 - **Email**: dion.andreansyah@email.com
-- **Portfolio**: [Live Demo](https://your-portfolio.netlify.app)
-- **LinkedIn**: [Connect with me](https://linkedin.com/in/dionandreansyah)
 
 ## 🚀 Available for
 
