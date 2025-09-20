@@ -1,16 +1,19 @@
 import { GoogleGenAI, Chat } from "@google/genai";
 import type { Content } from "@google/genai";
 
-// Ensure the API key is available from environment variables
-if (!process.env.API_KEY) {
-  throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Initialize AI with API key from environment variables
+const getAI = () => {
+  const apiKey = import.meta.env.VITE_API_KEY || process.env.API_KEY;
+  if (!apiKey) {
+    throw new Error("API_KEY environment variable not set");
+  }
+  return new GoogleGenAI({ apiKey });
+};
 
 let chatInstance: Chat | null = null;
 
 const initializeChat = (systemInstruction: string, history: Content[]) => {
+    const ai = getAI();
     chatInstance = ai.chats.create({
         model: 'gemini-2.5-flash',
         config: {
